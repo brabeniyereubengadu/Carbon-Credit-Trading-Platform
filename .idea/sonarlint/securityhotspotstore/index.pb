@@ -9,3 +9,5 @@ K
 contracts/verification.clar,9/8/98bf185a1116d313d3e5ed3f0e297817b0eeeae1
 J
 tests/verification.test.ts,5/f/5f6c036b4d5d2f26aaacea02c1e8b126e01ed95e
+F
+contracts/trading.clar,7/e/7e480343699ccc9440a9b0956f23152743eb78b7
