@@ -11,3 +11,5 @@ J
 tests/verification.test.ts,5/f/5f6c036b4d5d2f26aaacea02c1e8b126e01ed95e
 F
 contracts/trading.clar,7/e/7e480343699ccc9440a9b0956f23152743eb78b7
+E
+tests/trading.test.ts,f/0/f0756157ede790959f86d7b51ff4517a088985f5
