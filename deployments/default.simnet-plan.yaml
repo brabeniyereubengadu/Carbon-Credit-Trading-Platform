@@ -55,6 +55,11 @@ plan:
             path: contracts/carbon-credit-tokenization.clar
             clarity-version: 2
         - emulated-contract-publish:
+            contract-name: trading
+            emulated-sender: ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM
+            path: contracts/trading.clar
+            clarity-version: 2
+        - emulated-contract-publish:
             contract-name: verification
             emulated-sender: ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM
             path: contracts/verification.clar

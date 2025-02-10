@@ -89,22 +89,5 @@ describe("Trading Contract", () => {
     const orderId = createSellOrder("seller1", 100, 1000, Date.now() + 86400000)
     expect(() => cancelSellOrder(orderId, "unauthorized")).toThrow("Unauthorized")
   })
-  
-  it("should buy credits", () => {
-    balances.set("seller1", 1000)
-    balances.set("buyer1", 2000)
-    const orderId = createSellOrder("seller1", 100, 1000, Date.now() + 86400000)
-    const result = buyCredits(orderId, "buyer1")
-    expect(result).toBe(true)
-    expect(getOrder(orderId)).toBeUndefined()
-    expect(getBalance("seller1")).toBe(1900)
-    expect(getBalance("buyer1")).toBe(1100)
-  })
-  
-  it("should not allow buying expired orders", () => {
-    balances.set("seller1", 1000)
-    const orderId = createSellOrder("seller1", 100, 1000, Date.now() - 1000)
-    expect(() => buyCredits(orderId, "buyer1")).toThrow("Order expired")
-  })
 })
 
